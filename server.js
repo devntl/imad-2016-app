@@ -12,7 +12,11 @@ app.get('/', function (req, res) {
 app.get('/articleone', function (req, res) {
   res.sendFile('Article One Requested and will be send');
 });
-
+app.get('/counter', function(req, res) {
+    counter=counter+1;
+    res.sendfile(counter.toString());
+}
+);
 app.get('/articletwo', function (req, res) {
   res.sendFile('Article Two Requested and will be send');
 });
