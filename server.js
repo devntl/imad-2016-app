@@ -12,6 +12,8 @@ app.get('/', function (req, res) {
 app.get('/articleone', function (req, res) {
   res.sendFile('Article One Requested and will be send');
 });
+
+var counter=0;
 app.get('/counter', function(req, res) {
     counter=counter+1;
     res.sendfile(counter.toString());
