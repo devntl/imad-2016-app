@@ -20,15 +20,15 @@ app.get('/counter', function(req, res) {
 }
 );
 app.get('/articletwo', function (req, res) {
-  res.sendFile('Article Two Requested and will be send');
+  res.send('Article Two Requested and will be send');
 });
 
 app.get('/articlethree', function (req, res) {
-  res.sendFile('Article Two Requested and will be send');
+  res.send('Article Two Requested and will be send');
 });
 
 app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.sendfile(path.join(__dirname, 'ui', 'style.css'));
 });
 
 
